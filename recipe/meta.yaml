@@ -23,10 +23,10 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
   host:
     - pip
-    - python >=3.6
+    - python
     - numpy
   run:
-    - python >=3.6
+    - python
     - websockets
     - {{ pin_compatible('numpy') }}
     - spatialmath-python
