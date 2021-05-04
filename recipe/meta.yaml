@@ -1,5 +1,5 @@
 {% set name = "swift-sim" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/swift-sim-{{ version }}.tar.gz
-  sha256: 54ad5b0ae47c175c900c0460ba160d9714ef8019a870edda51404229c75f65ed
+  sha256: ba139b13bfce87869bc6151cf69d2f27bc07268403e32f4426b22244fe3cec3e
 
 build:
   number: 0
