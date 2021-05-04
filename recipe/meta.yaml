@@ -19,10 +19,11 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - numpy
   run:
     - python >=3.6
     - websockets
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - spatialmath-python
 
 test:
