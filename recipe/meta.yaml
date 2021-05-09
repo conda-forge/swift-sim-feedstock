@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/swift-sim-{{ version }}.tar.gz
-  sha256: ba139b13bfce87869bc6151cf69d2f27bc07268403e32f4426b22244fe3cec3e
+  url: https://github.com/jhavl/swift/archive/v{{ version }}.tar.gz
+  sha256: 0ca3e70276351f25c45bee3b41722f53a428cae4ea8568cdbdbab95e338b453d
 
 build:
   number: 0
