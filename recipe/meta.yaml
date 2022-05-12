@@ -30,7 +30,7 @@ requirements:
     - websockets
     - {{ pin_compatible('numpy') }}
     - spatialmath-python
-    - spatialgeometry >=0.1.0
+    - spatialgeometry >=1.0.0
 
 test:
   imports:
