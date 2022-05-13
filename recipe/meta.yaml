@@ -1,5 +1,5 @@
 {% set name = "swift-sim" %}
-{% set version = "0.10.0" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,15 +8,16 @@ package:
 
 source:
   url: https://github.com/jhavl/swift/archive/v{{ version }}.tar.gz
-  sha256: 17c4f03279172baac5b99459f955cf7606716b26e77af19d08c2c2a1b1afc00b
+  sha256: fb1d10ab09e807b320ae4870b010dc5d82af202842d6018f9094d4bdd271f49c
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
@@ -30,7 +31,7 @@ requirements:
     - websockets
     - {{ pin_compatible('numpy') }}
     - spatialmath-python
-    - spatialgeometry >=0.1.0
+    - spatialgeometry >=1.0.0
 
 test:
   imports:
