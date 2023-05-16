@@ -1,5 +1,5 @@
 {% set name = "swift-sim" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jhavl/swift/archive/v{{ version }}.tar.gz
-  sha256: 874c62653581666be5bea3d11ad9621c897937472cf86f0bcbba2dab344c57a1
+  sha256: 08ae9f9d498d0f6e5e8f5325ed814b344a6e0139d9ab09539d16a9000f7d7f9c
 
 build:
   number: 0
