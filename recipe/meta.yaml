@@ -25,6 +25,7 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
   host:
     - pip
+    - setuptools
     - python
     - numpy
   run:
